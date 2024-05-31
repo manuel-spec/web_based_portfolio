@@ -1,59 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Amanuel Asefa's Personal portfolio project</title>
-        <link rel="stylesheet" href="styles/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-            rel="stylesheet"
-        />
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        ></script>
-    </head>
-    <body>
-        <nav class="navigation">
-            <div class="brand">Brand</div>
-            <div class="links-container">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanuel Asefa's Personal Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet"
+    />
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <style>
+        /* Smooth Scroll CSS */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Styling for demonstration */
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        section:nth-child(even) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="brand">A</div>
+        <div class="links-container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="left">
+            <div class="social-icons">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
             </div>
-        </nav>
-        <header class="header">
-            <div class="left">
-                <div class="social-icons">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </div>
-                <div class="header-content">
-                    <h2 id="identity">I am Amanuel Asefa</h2>
-                    <p>
-                        I'm a full-stack web developer. I can provide clean code
-                        and pixel perfect design. I also make website more &
-                        more interactive with web animations.
-                    </p>
-                    <div class="button-wrapper">
-                        <button>My Projects</button>
-                        <button id="play">
-                            <ion-icon name="play"></ion-icon>
-                        </button>
-                    </div>
+            <div class="header-content" id="home">
+                <h2 id="identity">I am Amanuel Asefa</h2>
+                <p>
+                    I'm a full-stack web developer. I can provide clean code
+                    and pixel-perfect design. I also make websites more
+                    interactive with web animations.
+                </p>
+                <div class="button-wrapper">
+                    <a href="https://github.com/manuel-spec/">My Projects</a>
+                    <a id="play" href="">
+                        <ion-icon name="play"></ion-icon>
+                    </a>
                 </div>
             </div>
-            <div class="right">
+        </div>
+        <div class="right">
+            <img src="imgs/hero.png" alt="hero" width="300" />
+        </div>
+    </header>
+
+    <div class="services">
+        <h2>Projects</h2>
+        <div class="services-desc">
+            <p>Check out some of my latest projects below:</p>
+        </div>
+        <div class="border-separator"></div>
+    </div>
+    <div class="skills">
+        <div>
+            <div><ion-icon name="logo-github"></ion-icon></div>
+            <h4>Hotelify</h4>
+            <p>Integration of ASP.NET API with Flutter for a hotel booking application.</p>
+            <a href="https://github.com/manuel-spec/hotelify">here</a>
+        </div>
+        <div>
+            <div><ion-icon name="logo-github"></ion-icon></div>
+            <h4>Airbnb Clone [Flask]</h4>
+            <p>A clone of the popular Airbnb platform built using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/manuel-spec/AirBnB_clone_v4">here</a>
+        </div>
+        <div>
+            <div><ion-icon name="logo-github"></ion-icon></div>
+            <h4>Crypto Trade Simulation [React - Django]</h4>
+            <p>Simulation of cryptocurrency trading algorithms developed using Python.</p>
+            <div class="locked">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+        </div>
+        <div>
+            <div><ion-icon name="logo-github"></ion-icon></div>
+            <h4>TeterDelivery [Flutter]</h4>
+            <p>Rock and sand delivery application built with Flutter for efficient delivery management.</p>
+            <div class="locked">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+        </div>
+        <div>
+            <div><ion-icon name="logo-github"></ion-icon></div>
+            <h4>AskEth [Laravel]</h4>
+            <p>Q&A Platform for HighSchool and Colleague Students.</p>
+            <div class="locked">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+        </div>
+        <div>
+            <div><ion-icon name="logo-github"></ion-icon></div>
+            <h4>Personal Blogging Platform [Django]</h4>
+            <p>Personal blogging platform for everyone Come and share !</p>
+            <div class="locked">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+        </div>
+        <div>
+            <div><ion-icon name="logo-github"></ion-icon></div>
+            <h4>ASP.net Hotel Reservation API</h4>
+            <p>Add a description of your project here.</p>
+            <a href="https://github.com/manuel-spec/Hotel-Reservation-API">here</a>
+        </div>
+        <!-- Add more projects here -->
+    </div>
+
+    <div class="about" id="about">
+        <h2>About Me</h2>
+        <div class="text-desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus inventore doloremque corrupti eveniet animi voluptate, nisi quos labore quae provident iusto dicta voluptas quo nihil saepe reprehenderit laborum sunt reiciendis!</p>
+        </div>
+        <div class="border-separator"></div>
+        <div class="me">
+            <div class="me-photo">
                 <img src="imgs/hero.png" alt="hero" width="300" />
             </div>
-        </header>
-    </body>
+            <div class="me-info">
+                <h2>Who's this guy?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus inventore doloremque corrupti eveniet animi voluptate, nisi quos labore quae provident iusto dicta voluptas quo nihil saepe reprehenderit laborum sunt reiciendis!</p>
+                <h2>What I do?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus inventore doloremque corrupti eveniet animi voluptate, nisi quos labore quae provident iusto dicta voluptas quo nihil saepe reprehenderit laborum sunt reiciendis!</p>
+            </div>
+            <div class="contact-info" id="contact">
+                <div class="contact-item">
+                    <h5>Name :</h5>
+                    <p>Amanuel Asefa</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Phone :</h5>
+                    <p>+251980206979</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Email :</h5>
+                    <p>amaniase084@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Linkedin :</h5>
+                    <p><a style="color: #ffffff;" href="https://www.linkedin.com/in/amanuel-asefa-03904a24a">here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

@@ -1,90 +1,303 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
-    font-family: "JetBrains Mono";
-}
-body {
+    font-family: "JetBrains Mono", monospace;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1f2235;
 }
+
+body {
+    background-color: #1f2235;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
 }
+
 .brand {
     text-align: center;
     padding: 15px;
     color: #ffffff;
     font-weight: bold;
-    font-family: sans-serif;
-    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
 }
+
 .links-container > ul > li {
     display: inline-block;
+    margin-right: 15px;
 }
+
 .links-container > ul > li > a {
     color: #ffffff;
     padding: 6px;
-    font-family: "JetBrains Mono";
-    font-size: 14px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.links-container > ul > li > a:hover {
+    color: #f64f55;
 }
 
 .navigation {
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-.social-icons > img {
-    padding: 5px;
-    margin: 5px;
-}
-.header > .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-.header {
-    padding: 60px;
+    padding: 10px 20px;
     background-color: #242f49;
 }
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    background-color: #242f49;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .social-icons > ion-icon {
     color: #ffffff;
     border: 1px solid #f64f55;
     border-radius: 100px;
     padding: 5px;
     margin: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
 }
-.header {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 50% 50%;
-    height: 60vh; /* Adjust this value as needed */
+
+.social-icons > ion-icon:hover {
+    background-color: #f64f55;
+    border-color: #ffffff;
 }
-.left {
-    margin-left: 150px;
-}
+
 .header-content > * {
-    /* width: 70%; */
     color: #ffffff;
-    font-family: "JetBrains Mono";
+    margin: 10px 0;
 }
+
 .header-content > p {
-    font-size: 12px;
+    font-size: 16px;
 }
+
 #identity {
-    font-family: sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
 }
-#play {
-    padding: 8px 19px 8px 19px;
-}
+
 .button-wrapper > button {
     background-color: #23253a;
     border: 1px solid #f64f55;
     border-radius: 20px;
-    padding: 8px 19px;
+    padding: 10px 20px;
     color: #ffffff;
-    font-size: 10px;
+    font-size: 16px;
     cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
 }
+.button-wrapper > a {
+    background-color: #23253a;
+    border: 1px solid #f64f55;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
 .button-wrapper > button:hover {
     background-color: #f64f55;
+}
+.button-wrapper > a:hover {
+    background-color: #f64f55;
+}
+
+.services {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services > h2 {
+    color: #f64f55;
+    font-size: 28px;
+}
+
+.services-desc {
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+.border-separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f64f55;
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.skills > div {
+    background-color: #242f49;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.skills > div:hover {
+    transform: translateY(-10px);
+}
+
+.skills > div > ion-icon {
+    color: #f64f55;
+    font-size: 40px;
+}
+.locked {
+    color: #f64f55;
+    font-size: 20px;
+
+}
+
+.skills > div > h4 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+.skills > div > p {
+    margin: 10px 0;
+    font-size: 12px;
+}
+.skills > div > a {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #f64f55;
+}
+
+.about {
+    background-color: #242f49;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about > h2 {
+    font-size: 28px;
+}
+
+.text-desc {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* Adding blurry effect and grid layout */
+.me {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+    padding: 40px 20px;
+}
+
+.me-photo, .me-info, .contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+}
+.me-photo {
+    margin-top: 20px;
+}
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-item {
+    margin: 10px 0;
+}
+
+.contact-item > h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-item > p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .header {
+        padding: 40px 20px;
+    }
+
+    .header-content > p {
+        font-size: 14px;
+    }
+
+    .services-desc, .text-desc, .me {
+        padding: 0 20px;
+    }
+
+    .skills {
+        padding: 20px;
+    }
+
+    .skills > div {
+        width: 100%;
+    }
+
+    .me {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand {
+        font-size: 20px;
+    }
+
+    .links-container > ul > li > a {
+        font-size: 14px;
+    }
+
+    .header-content > p {
+        font-size: 12px;
+    }
+
+    .button-wrapper > button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .services > h2 {
+        font-size: 24px;
+    }
+
+    .skills > div > h4 {
+        font-size: 18px;
+    }
+
+    .about > h2 {
+        font-size: 24px;
+    }
 }
