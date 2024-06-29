@@ -129,7 +129,7 @@ a {
 }
 
 .skill {
-    background-color: #1F2235; /* Darker background for skills */
+    background-color: #1F2235; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -143,7 +143,7 @@ a {
 .skill h4 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #ffffff; /* Light text color */
+    color: #ffffff; 
 }
 
 .skill ul {
@@ -154,7 +154,7 @@ a {
 .skill ul li {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #cccccc; /* Lighter text color */
+    color: #cccccc; 
 }
 
 /* Media query for responsiveness */
